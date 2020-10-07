@@ -1,0 +1,22 @@
+.scroll-pane
+{
+    -fx-background-color: transparent;
+    -fx-border-color: derive(gray, 100%);
+    -fx-padding: 0px;
+}
+
+.viewport{
+    -fx-background-radius: 5px;
+    -fx-background-color: #ffffff
+}
+
+#text {
+     -fx-font-family: "Arial";
+     -fx-font-size: 20;
+}
+
+ #text:hover {
+     -fx-font-family: "Arial";
+     -fx-font-size: 20;
+     -fx-text-fill: #1d1d1d;
+}

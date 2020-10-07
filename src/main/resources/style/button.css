@@ -1,0 +1,51 @@
+.button {
+    -fx-background-radius: 100;
+    -fx-background-color: #ffffff;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14pt;
+    -fx-text-fill: #000000;
+    -fx-effect:  dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 2, 3);
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#btClose {
+    -fx-background-radius: 100;
+    -fx-background-color: #DE6468;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14pt;
+    -fx-text-fill: #ffffff;
+    -fx-effect:  dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 2, 3);
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+}
+
+.button:hover, #btClose:hover {
+    -fx-background-color: #175FD6;
+    -fx-text-fill: #ffffff;
+}
+
+.button:pressed, .button:default:hover:pressed, #btClose:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+.button-selected{
+    -fx-background-color: #49A9D6;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
